@@ -10,7 +10,7 @@ This repository contains a project for detecting spam SMS messages using a machi
 - [Installation](#installation)
 - [Usage](#usage)
 - [Contributing](#contributing)
-- [License](#license)
+
 
 ## Introduction
 
