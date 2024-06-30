@@ -2,7 +2,7 @@ import streamlit as st
 import pickle 
 import string 
 import nltk 
-import pandas
+nltk.download('punkt')
 from sklearn.feature_extraction.text import TfidfVectorizer
 # string.punctuation
 from nltk.corpus import stopwords
