@@ -3,6 +3,7 @@ import pickle
 import string 
 import nltk 
 nltk.download('punkt')
+nltk.download('stopwords')
 from sklearn.feature_extraction.text import TfidfVectorizer
 # string.punctuation
 from nltk.corpus import stopwords
