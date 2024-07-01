@@ -5,6 +5,7 @@ import nltk
 nltk.download('punkt')
 nltk.download('stopwords')
 from sklearn.feature_extraction.text import TfidfVectorizer
+from sklearn.naive_bayes import MultinomialNB
 # string.punctuation
 from nltk.corpus import stopwords
 # stopwords.words('english')
@@ -33,8 +34,14 @@ def transform_text(text):
 
     return "  ".join(y) #or y
 
-tfidf=pickle.load(open('vectorizer.pkl','rb'))
-model=pickle.load(open('model.pkl','rb'))
+with open('vectorizer.pkl', 'rb') as f:
+    tfidf = pickle.load(f)
+    # st.write("Vectorizer loaded successfully")
+
+with open('model.pkl', 'rb') as f:
+    model = pickle.load(f)
+    # st.write("Model loaded successfully")
+
 
 st.title("Email/SMS Spam Classifier")
 
